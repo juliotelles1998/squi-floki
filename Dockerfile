@@ -6,7 +6,7 @@ LABEL maintainer="Ubuntu Server team <ubuntu-server@lists.ubuntu.com>"
 RUN set -eux; \
     apt-get update; \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        tzdata; \
+        tzdata wget; \
     echo "Etc/UTC" > /etc/timezone; \
     dpkg-reconfigure -f noninteractive tzdata; \
     DEBIAN_FRONTEND=noninteractive apt-get full-upgrade -y; \
@@ -21,8 +21,8 @@ RUN set -eux; \
     /usr/sbin/squid -k parse; \
     /usr/sbin/squid --version;
 
-# Copia o arquivo de domínios permitidos para o contêiner
-COPY permitidos.txt /etc/squid/permitidos.txt
+# Baixa o arquivo permitidos.txt atualizado do GitHub
+RUN wget -O /etc/squid/permitidos.txt https://raw.githubusercontent.com/juliotelles1998/squi-floki/main/permitidos.txt
 
 # Gera as ACLs com base no arquivo de domínios
 RUN set -eux; \
