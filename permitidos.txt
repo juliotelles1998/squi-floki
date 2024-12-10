@@ -15,4 +15,3 @@
 .chrome.google.com
 .chromewebstore.google.com
 .certificates.godaddy.com
-.mercadolivre.com.br
