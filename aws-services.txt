@@ -5,4 +5,3 @@ sorocaba
 sao-roque
 valinhos
 sao-jose-dos-campos
-gugu
