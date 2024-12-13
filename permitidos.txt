@@ -15,3 +15,4 @@
 .chrome.google.com
 .chromewebstore.google.com
 .certificates.godaddy.com
+.daycoval.com.br
