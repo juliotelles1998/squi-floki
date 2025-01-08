@@ -17,4 +17,3 @@
 .certificates.godaddy.com
 .daycoval.com.br
 .factorio.com
-.meuip.com.br
