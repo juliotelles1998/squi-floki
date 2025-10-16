@@ -18,3 +18,4 @@
 .certificates.godaddy.com
 .daycoval.com.br
 .factorio.com
+.poupacredazure-admin.sharepoint.com
