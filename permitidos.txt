@@ -1,4 +1,4 @@
-#http_access allow all
+http_access allow all
 .whatsapp.com
 .whatsapp.net
 .fbcdn.net
