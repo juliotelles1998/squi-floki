@@ -1,4 +1,4 @@
-http_access allow all
+#http_access allow all
 .whatsapp.com
 .whatsapp.net
 .fbcdn.net
@@ -18,4 +18,3 @@ http_access allow all
 .certificates.godaddy.com
 .daycoval.com.br
 .factorio.com
-.statusblog.locaweb.com.br
